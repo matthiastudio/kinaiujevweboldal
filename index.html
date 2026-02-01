@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinai újév</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="cim">Kinai újév</h1>
+        </div> 
+        <hr>             
+
+
+        <div class="countdown">
+        <h2>HÁTRALÉVŐ IDŐ AZ ESEMÉNYIG:</h2>
+        <h2 id="countdown"></h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="/img/image (2).jpg" alt="Avatar">
+                <div class="container">
+                    <h3><b>Érdekeségek</b></h3>
+                    <p>A kínai újév (tavaszi fesztivál) a legfontosabb fesztivál Kínában, és jelentős esemény más ázsiai országokban is. Íme érdekes tények a kínai újévről.</p>
+                </div> 
+                <button class="info-btn" id="openFunfacts">Olvass tovább</button>                       
+            </div>            
+            <div class="card">
+                <img src="/img/iNSvoFmsP8XBhhLAoKcP-1000-80.jpg" alt="Avatar">
+                <div class="container">
+                    <h3><b>Idöpontok</b></h3>
+                    <p>Az ünnep a téli napforduló utáni második újholdra esik, december 21-én. Kínában az újév minden évben más dátumra esik, mint a Gergely-naptár szerint. A dátumok általában január 21. és február 20. közé esnek.</p>
+                </div>
+                <button class="info-btn" id="openDates">Olvass tovább</button>
+            </div>
+            <div class="card">
+                <img src="/img/a7928527-3bb3-436f-a4ba-86c06ec77058_chinese-new-year-lunar-lanterns.avif" alt="Avatar">
+                <div class="container">
+                    <h3><b>Hagyományok</b></h3>
+                    <p>Hagyományosan az istenségek és az ősök tiszteletének ideje volt, és mára a családtagok lakomázásának és látogatásának is az idejévé vált.</p>
+                </div>
+                <button class="info-btn" id="openTraditional">Olvass tovább</button>                
+            </div>
+            <div class="card">
+                <img src="/img/bp-whatsyourzodiac-dial-hero.jpg" alt="Avatar">
+                <div class="container">
+                    <h3><b>Állatjegyek</b></h3>
+                    <p>Minden jegy egy állatról kapta a nevét, és minden állatnak megvannak a saját egyedi jellemzői. Tudod, miért van a fenti sorrendben a 12 kínai állatövi állat?</p>
+                </div>
+                <button class="info-btn" id="openZodiac">Olvass tovább</button> 
+            </div>
+        </div>   
+
+        
+
+
+        <div class="modal" id="zodiacModal">
+        <div class="modal-box">
+            <button class="close-btn" id="closeZodiac">×</button>
+            <h3> Állatjegyek</h3>
+            <p>A 12 kínai újévi állatövi állat sorrendben a patkány, az ökör, a tigris, a nyúl, a sárkány, a kígyó, a ló, a kecske, a majom, a kakas, a kutya és a disznó. Ez egy 12 éves ciklust alkot, ahol minden év egy állathoz kapcsolódik, amelyről úgy tartják, hogy befolyásolja a személyiségjegyeket. Egy népszerű legenda szerint ezeket az állatokat a Jáde császár választotta ki a folyón való átkelés sorrendje alapján.</p>
+            <ul>
+                <li class="rat"><b>Patkány</b> – gyors észjárású, találékony, sokoldalú, kedves</li>
+                <li class="ox"><b>Bivaly</b> – szorgalmas, megbízható, erős, határozott</li>
+                <li class="tiger"><b>Tigris</b> – bátor, magabiztos, versenyképes</li>
+                <li class="rabbit"><b>Nyúl</b> – csendes, elegáns, kedves, felelősségteljes</li>
+                <li class="dragon"><b>Sárkány</b> – magabiztos, intelligens, lelkes</li>
+                <li class="snake"><b>Kígyó</b> – rejtélyes, intelligens, bölcs</li>
+                <li class="horse"><b>Ló</b> – élénk, aktív, energikus</li>
+                <li class="goat"><b>Kecske</b> – nyugodt, szelíd, együttérző</li>
+                <li class="monkey"><b>Majom</b> – éles, okos, kíváncsi</li>
+                <li class="rooster"><b>Kakas</b> – figyelmes, szorgalmas, bátor</li>
+                <li class="dog"><b>Kutya</b> – kedves, őszinte, körültekintő</li>
+                <li class="pig"><b>Malac</b> – együttérző, nagylelkű, szorgalmas</li>
+            </ul>
+
+            <h4>Évek</h4>
+            <ul>
+                <li class="rat"><b>Patkány</b> – 1924, 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020</li>
+                <li class="ox"><b>Bivaly</b> – 1925, 1937, 1949, 1961, 1973, 1985, 1997, 2009, 2021 </li>
+                <li class="tiger"><b>Tigris</b> – 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022</li>
+                <li class="rabbit"><b>Nyúl</b> – 1927, 1939, 1951, 1963, 1975, 1987, 1999, 2011, 2023</li>
+                <li class="dragon"><b>Sárkány</b> – 1928, 1940, 1952, 1964, 1976, 1988, 2000, 2012, 2024</li>
+                <li class="snake"><b>Kígyó</b> – 1929, 1941, 1953, 1965, 1977, 1989, 2001, 2013, 2025</li>
+                <li class="horse"><b>Ló</b> – 1930, 1942, 1954, 1966, 1978, 1990, 2002, 2014, 2026 </li>
+                <li class="goat"><b>Kecske</b> – 1931, 1943, 1955, 1967, 1979, 1991, 2003, 2015, 2027</li>
+                <li class="monkey"><b>Majom</b> – 1932, 1944, 1956, 1968, 1980, 1992, 2004, 2016, 2028</li>
+                <li class="rooster"><b>Kakas</b> – 933, 1945, 1957, 1969, 1981, 1993, 2005, 2017, 2029</li>
+                <li class="dog"><b>Kutya</b> – 1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018, 2030</li>
+                <li class="pig"><b>Malac</b> – 1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031</li>
+            </ul>
+        </div>
+        </div>         
+          
+        
+            <div class="modal" id="funfactsModal">
+            <div class="modal-box">
+                    <button class="close-btn" data-close>×</button>
+                    <h3>Érdekességek</h3>
+                    <p>A kínai újév (tavaszi fesztivál) a legfontosabb fesztivál Kínában, és jelentős esemény más ázsiai országokban is.</p>
+                    <ul>
+                    <li>Ez a fesztivál a világ népességének 1/4-e számára készült.</li>
+                    <li>A fesztivált 16 napig ünneplik a Lámpásfesztiválig.</li>
+                    <li>Milliárdnyi piros borítékot cserélnek ki egymás között.</li>
+                    <li>A fesztivál a világ legnagyobb éves migrációját okozza.</li>
+                    <li>Mosni, söpörni vagy a szemetet kivinni tilos.</li>
+                    </ul>
+            </div>
+                
+        
+            </div>
+                <div class="modal" id="datesModal">
+                <div class="modal-box">
+                    <button class="close-btn" data-close>×</button>
+                    <h3>Időpontok</h3>
+                    <p>
+                    A kínai újév dátuma a holdnaptárhoz igazodik, ezért évről évre változik a Gergely-naptár szerint.
+                    </p>
+
+                    <ul>
+                    <li>A 2026-os kínai újév február 17-ére (keddre) esik, és február 21-ig tart. A Ló éve</li>
+                    <li>Hivatalos munkaszüneti napként a kínaiak kilenc nap szabadságot vehetnek ki a munkából, február 15. és február 23. között</li>
+                    <li>A törvényes ünnep hét napig tart, a holdújév napjától az első holdhónap hatodik napjáig.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal" id="traditionalModal">
+            <div class="modal-box">
+                <button class="close-btn" data-close>×</button>
+                <h3>Hagyományok</h3>
+                <p>
+                A regionális szokások és hagyományok nagyban különböznek, de a közös téma: az óév befejezése és az új év szerencséjének és jólétének üdvözlése. <br>A főbb kínai újévi tevékenységek közé tartozik:
+                </p>
+
+                <ul>
+                <li>dekorációk kihelyezése</li>
+                <li>áldozatok bemutatása az ősöknek</li>
+                <li>családi összejövetel vacsora szilveszterkor</li>
+                <li>piros borítékok és egyéb ajándékok átadása</li>
+                <li>petárdák és tűzijátékok használata</li>
+                <li>oroszlán- és sárkánytáncok megtekintése</li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+        <br>
+
+        <footer>
+            <p>Szerző: Kaveczki Roxána Dalma</p>
+            <p>2026.02.01</p>
+        </footer>
+
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
